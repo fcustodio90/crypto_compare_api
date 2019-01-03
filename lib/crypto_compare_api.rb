@@ -190,6 +190,10 @@ module CryptoCompareApi
       top5_winners_and_losers.first(5).to_h
     end
 
+    def add_crypto_to_hash(ticker_name, ticker_code)
+      CRYPTO_HASH[ticker_name] = ticker_code
+    end
+
     private
 
     def hash_to_string_and_array

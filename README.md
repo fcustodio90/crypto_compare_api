@@ -20,6 +20,20 @@ Or install it yourself as:
 
     $ gem install crypto_compare_api
 
+If you are prompt with install errors run:
+
+    $ bundle update
+
+Also this gem will work without an API key but it is recommended that you create one at https://www.cryptocompare.com/ 
+
+After creating your profile and generating a new key do:
+
+    $ touch .env
+
+and copy paste your key like this:
+
+    CRYPTO_COMPARE_API_KEY = your_key
+
 ## Usage
 
 This gem works as a service so anytime you wanna call a built in method you need to type -> CryptoCompareApi::CryptoCompareApi.new.INSERT_METHOD
